@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    ul
+    each post in data
+        li
+            a(href=post.url) #{post.title}
+            form(method="POST",action)    
+            #form-group 
+                label Event Description:
+                textarea.form-control(name='EventDes')      
+            input.btn.btn-primary(type='submit', value='Submit') 
+            
