@@ -16,6 +16,8 @@ router.post('/submit', post_controller.post_create_post);
 
 router.get('/posts', post_controller.post_list_get);
 
+// router.post('/submit', post_controller.post_comment_post)
+
 // router.post("/submit", (req, res) => {
 //   var post = new Post(req.body);
 //   post.save();
